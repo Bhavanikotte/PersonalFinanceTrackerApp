@@ -1,0 +1,92 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#CCFFCC"
+    android:paddingStart="24dp"
+    android:paddingEnd="24dp"
+    tools:context=".source_activity">
+
+    <ImageButton
+        android:id="@+id/imageButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="?attr/homeAsUpIndicator"
+        android:padding="18dp"
+        android:onClick="back"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:background="@color/pink"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:layout_below="@+id/imageButton"
+        android:layout_marginTop="16dp">
+
+        <TextView
+            android:id="@+id/sourcetextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Earnings"
+            android:textColor="@color/black"
+            android:textSize="30sp"
+            android:layout_marginTop="24dp"
+            android:layout_marginBottom="32dp" />
+
+        <EditText
+            android:id="@+id/fs_input"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="First Source Of Income"
+            android:inputType="numberDecimal"
+            android:padding="18dp"
+            android:textColor="@color/black"
+            android:textColorHint="@color/black"
+            android:textSize="20sp"
+            android:background="@drawable/edittext_background"
+            android:layout_marginBottom="16dp" />
+
+        <EditText
+            android:id="@+id/ss_input"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Second Source Of Income"
+            android:inputType="numberDecimal"
+            android:padding="18dp"
+            android:textColor="@color/black"
+            android:textColorHint="@color/black"
+            android:textSize="20sp"
+            android:background="@drawable/edittext_background"
+            android:layout_marginBottom="16dp" />
+
+        <EditText
+            android:id="@+id/ts_input"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Third Source Of Income"
+            android:inputType="numberDecimal"
+            android:padding="18dp"
+            android:textColor="@color/black"
+            android:textColorHint="@color/black"
+            android:textSize="20sp"
+            android:background="@drawable/edittext_background"
+            android:layout_marginBottom="32dp" />
+
+        <Button
+            android:id="@+id/Submit_button"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:text="Submit"
+            android:textSize="18sp"
+            android:textColor="@color/white"
+            android:background="@drawable/button_background"
+            android:layout_marginBottom="20dp" />
+
+    </LinearLayout>
+
+</RelativeLayout>

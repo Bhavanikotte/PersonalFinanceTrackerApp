@@ -1,0 +1,47 @@
+<resources>
+
+    <!-- Base application theme -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <!-- Custom EditText style -->
+    <style name="CustomEditText">
+        <item name="android:padding">10dp</item>
+        <item name="android:background">@drawable/edit_text_background</item>
+        <item name="android:textColor">@android:color/black</item>
+    </style>
+
+    <!-- Custom Button style -->
+    <style name="CustomButton">
+        <item name="android:backgroundTint">@color/colorPrimary</item>
+        <item name="android:textColor">@android:color/white</item>
+        <item name="android:padding">12dp</item>
+    </style>
+
+    <!-- Social Button styles -->
+    <style name="SocialButton">
+        <item name="android:padding">10dp</item>
+        <item name="android:textColor">@android:color/white</item>
+    </style>
+
+    <style name="GoogleButton" parent="SocialButton">
+        <item name="android:background">@color/colorRed</item>
+    </style>
+
+    <style name="FacebookButton" parent="SocialButton">
+        <item name="android:background">@color/colorBlue</item>
+    </style>
+
+    <style name="LinkedInButton" parent="SocialButton">
+        <item name="android:background">@color/colorGray</item>
+    </style>
+
+    <style name="GitHubButton" parent="SocialButton">
+        <item name="android:background">@color/colorDarkerGray</item>
+    </style>
+
+</resources>
